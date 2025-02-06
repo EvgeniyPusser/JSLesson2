@@ -21,7 +21,7 @@ function sumOfDigits(str) {
 
 
 function displayAnanas() {
-    console.log(('a' + (0/0) + 'as').toLowerCase());
+    console.log(('a' + +("as") + 'as').toLowerCase());
 }
 
 
