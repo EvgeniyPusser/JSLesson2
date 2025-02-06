@@ -4,7 +4,7 @@ function sumOfDigits(str) {
   let sum = 0;
   let num = +str; // Convert the string to a number once
 
-   if (isNaN(num) || num === " ") {
+   if (isNaN(num) || num == " ") {
   console.log("Not a number");
   return;
 }
@@ -26,5 +26,5 @@ function displayAnanas() {
 
 
 
-console.log(sumOfDigits("8999890.99"))
+console.log(sumOfDigits(" "))
 displayAnanas();
