@@ -9,7 +9,9 @@ function sumOfDigits(str) {
   return;
 }
 
-
+  if (+(num) < 0) {
+    num = -num;
+  }
   while (num > 0) {
     let digit = Math.trunc(num % 10); // Extract last digit
     sum += digit;
@@ -26,5 +28,5 @@ function displayAnanas() {
 
 
 
-console.log(sumOfDigits(" "))
+console.log(sumOfDigits("989898989"))
 displayAnanas();
