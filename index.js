@@ -2,20 +2,18 @@
 function sumOfDigits(str) {
   
   let sum = 0;
-  let num = +str; // Convert the string to a number once
+  let num = Math.trunc(Math.abs(+str)); 
+  console.log(num);
 
-   if (isNaN(num) || num == " ") {
-  console.log("Not a number");
-  return;
+   if (isNaN(num) || num === " ") {
+  return NaN;
 }
 
-  if (+(num) < 0) {
-    num = -num;
-  }
+ 
   while (num > 0) {
-    let digit = Math.trunc(num % 10); // Extract last digit
+    let digit = num % 10; 
     sum += digit;
-    num = Math.trunc(num / 10); // Remove the last digit
+    num = Math.trunc(num / 10); 
   }
 
   return sum;
@@ -28,5 +26,5 @@ function displayAnanas() {
 
 
 
-console.log(sumOfDigits("989898989"))
+console.log(sumOfDigits("-90.898"))
 displayAnanas();
