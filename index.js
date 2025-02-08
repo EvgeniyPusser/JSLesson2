@@ -3,9 +3,9 @@ function sumOfDigits(str) {
   
   let sum = 0;
   let num = Math.trunc(Math.abs(+str)); 
-  console.log(num);
+  
 
-   if (isNaN(num) || num === " ") {
+   if (isNaN(num)) {
   return NaN;
 }
 
@@ -26,5 +26,9 @@ function displayAnanas() {
 
 
 
-console.log(sumOfDigits("-90.898"))
+console.log(`Some of digits, when the input is blank: ${sumOfDigits(" ")}`)
+console.log(`Some of digits, when the input is negative: ${sumOfDigits("-787878")}`)
+console.log(`Some of digits, when the input is not the integer: ${sumOfDigits("897.7878")}`)
+console.log(`Some of digits, when the input is empty: ${sumOfDigits("")}`)
+
 displayAnanas();
